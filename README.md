@@ -1,5 +1,5 @@
 # Introduction
-fileupload是为了抽象各种文件存储对接的组件模块，目前只集成了fastdfs和阿里云oss，后续会进行新增，欢迎大家给出建议
+fileupload是为了抽象各种文件存储对接的组件模块，提供一个统一的API，目前只集成了fastdfs和阿里云oss，后续会进行新增，欢迎大家给出建议
 
 # 使用方式
 ### 配置
