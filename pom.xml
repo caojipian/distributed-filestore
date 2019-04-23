@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.cjp.framework</groupId>
+  <artifactId>fileupload</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+
+  <name>fileupload</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+		<fastdfs.version>1.27.0.0</fastdfs.version>
+		<oss.version>3.4.2</oss.version>
+		<spring.version>5.1.6.RELEASE</spring.version>
+		<apache.io-common.version>2.6</apache.io-common.version>
+	</properties>
+    <dependencies>
+    	<dependency>
+		    <groupId>net.oschina.zcx7878</groupId>
+		    <artifactId>fastdfs-client-java</artifactId>
+		    <version>${fastdfs.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.aliyun.oss</groupId>
+		    <artifactId>aliyun-sdk-oss</artifactId>
+		    <version>${oss.version}</version>
+		</dependency>
+        <dependency>  
+           <groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+        </dependency>  
+        <dependency>  
+            <groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+        </dependency> 
+         <dependency>  
+            <groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+        </dependency>
+        <dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${apache.io-common.version}</version>
+		</dependency>
+    </dependencies>
+    <repositories>
+      <repository>
+          <id>aliyunmaven</id>
+          <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+      </repository>
+  </repositories>
+  <build>
+  	<plugins>
+		<!-- 指定打包时的编码和JDK版本 -->
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
+				<encoding>UTF-8</encoding>
+			</configuration>
+		</plugin>
+  	</plugins>
+  </build>
+</project>
