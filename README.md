@@ -2,6 +2,7 @@
 fileupload是为了文件存储抽象层，提供一个文件存储统一的API，目前只集成了fastdfs和阿里云oss，后续会进行新增，欢迎大家给出建议
 
 # 使用方式
+### 使用前提：项目需要是基于spring3.x以上版本，jdk1.8及以上版本
 #### 配置
 ```Java
 @Configuration
