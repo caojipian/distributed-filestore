@@ -53,7 +53,7 @@ public class App
 #### pom.xml中加入依赖
 ```Xml
 <dependency>
-		<groupId>com.cjp.framework</groupId>
-		<artifactId>fileupload</artifactId>
-		<version>1.0</version>
-	</dependency>
+	<groupId>com.cjp.framework</groupId>
+	<artifactId>fileupload</artifactId>
+	<version>1.0</version>
+</dependency>
