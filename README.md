@@ -2,7 +2,7 @@
 fileupload是为了抽象各种文件存储对接的组件模块，提供一个统一的API，目前只集成了fastdfs和阿里云oss，后续会进行新增，欢迎大家给出建议
 
 # 使用方式
-### 配置
+#### 配置
 ```Java
 @Configuration
 //如果使用oss
@@ -30,7 +30,7 @@ public class FileUploadConfig{
   }
 }
 ```
-### 测试代码
+#### 测试代码
 ```Java
 @SpringBootApplication
 public class App 
@@ -49,3 +49,11 @@ public class App
       }
     }
 }
+```
+#### pom.xml中加入依赖
+```Xml
+<dependency>
+		<groupId>com.cjp.framework</groupId>
+		<artifactId>fileupload</artifactId>
+		<version>1.0</version>
+	</dependency>
